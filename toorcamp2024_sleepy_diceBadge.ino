@@ -11,6 +11,7 @@ int pinLeds3 = 0;
 int pinLed4 = 3;
 int buttonPin = 2; //interrupt/wake up pin
 int buttonState;
+int prevbuttonstate = 1;
 long ran; //variable for the random number
 int time = 15;
 
@@ -21,7 +22,7 @@ void setup (){
   pinMode (pinLeds3, OUTPUT);
   pinMode (pinLed4, OUTPUT);
   pinMode (buttonPin, INPUT);
-  randomSeed(analogRead(0));
+  randomSeed(analogRead(0)); //open pin for random seed
 
   //sleep mode settings
   adc_disable(); // ADC uses ~320uA while asleep
@@ -48,10 +49,12 @@ void loop()
   buttonState = digitalRead(buttonPin); 
   if (buttonState == HIGH){
   enterSleep(); //sleep immediately if button not pressed
+  prevbuttonstate = HIGH;
   }
 
 //if sleep does not happen, or wakeup is triggered, roll the die!
 //roll 7 times and keep the last one
+if ((buttonState == LOW) && (prevbuttonstate == HIGH)){
     for (int i = 0; i <= 6; i++){
 //clear prev roll for the next one
   digitalWrite (pinLeds1, LOW);
@@ -93,7 +96,8 @@ void loop()
    }
   }
   delay(250); //hold final die roll
-
+  prevbuttonstate = LOW;
+}
 //clear all leds at loop end
   digitalWrite (pinLeds1, LOW);
   digitalWrite (pinLeds2, LOW);
