@@ -19,12 +19,15 @@ Come to the Hardware Hacking Stage during the scheduled build times to get the p
 ![layoutdeerbadge](https://github.com/lithiumbot/deerbadge2024/assets/8286697/c20d25a4-8395-4a40-9a82-373c69d374ce)
 
 The parts you will need:
-R1: 10k ohm 1/4 watt resistor (Brown, Black, Orange, Gold)
-R2: 100 ohm 1/4 watt resistor (Brown, Black, Brown, Gold)
-U1: 8 pin DIP socket and an ATTINY85 Atmel microcontroller
-D1-D7: 7x 3mm LEDs
-SW1: a 4-leg tactile switch
+
+R1: 10k ohm 1/4 watt resistor (Brown, Black, Orange, Gold)<br>
+R2: 100 ohm 1/4 watt resistor (Brown, Black, Brown, Gold)<br>
+U1: 8 pin DIP socket and an ATTINY85 Atmel microcontroller<br>
+D1-D7: 7x 3mm LEDs<br>
+SW1: a 4-leg tactile switch<br>
 SW2: unused (but maybe someone at camp will have something that fits there...)
+
+
 
 
 
