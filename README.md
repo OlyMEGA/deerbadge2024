@@ -14,6 +14,10 @@ This project is a simple electronic die that lights up the 'eyes' of the deer sk
 You can see in the schematic that it makes use of the limited outputs on the ATtiny85 by taking advantage of the fact that most of the LEDs light in pairs to create the dice patterns. There are extra pads on the input pin so that other types of normally open switches can be added.
 
 
+
+
+![2024-06-14 16 15 44](https://github.com/lithiumbot/deerbadge2024/assets/8286697/4b8e2378-93ea-48e3-92b4-7773ec31a102)
+
 Come to the Hardware Hacking Stage during the scheduled build times to get the parts for your badge, and to make use of our soldering stations. OlyMEGA camp volunteers will be available to help you with soldering and badge assembly. https://talks.toorcon.net/toorcamp-2024/schedule/
 
 ![layoutdeerbadge](https://github.com/lithiumbot/deerbadge2024/assets/8286697/c20d25a4-8395-4a40-9a82-373c69d374ce)
