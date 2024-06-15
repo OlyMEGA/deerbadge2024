@@ -36,4 +36,5 @@ SW2: unused (but maybe someone at camp will have something that fits there...)
 
 
 
-need to add link to ATtiny85 programming
+(this readme under development. 
+need to add links to a guide on ATtiny85 programming)
